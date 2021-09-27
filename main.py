@@ -391,7 +391,7 @@ def next_sale():
         r1 = cursor1.fetchall()
 
         import csv
-        c = csv.writer(open('C:\\Users\\Isha Madan\\PycharmProjects\\final_year\\static\\Next target.csv', 'w'),
+        c = csv.writer(open('.\\static\\Next target.csv', 'w'),
                        lineterminator='\n')
         c.writerow(('Department', 'Date', 'Next target Sale for store'+store+''))
         for f in r1:
@@ -851,7 +851,7 @@ def see_ps():
         return render_template("view_error.html", msg="Please do prediction first...", title=title,details=details,id=session['Store_ID'])
 
     import csv
-    c=csv.writer(open('C:\\Users\\Isha Madan\\PycharmProjects\\final_year\\static\\predict.csv','w'),lineterminator='\n')
+    c=csv.writer(open('.\\static\\predict.csv','w'),lineterminator='\n')
     c.writerow(('Department','Date','Next Weekly Sale'))
     for f in r1:
         c.writerow(f)
@@ -999,7 +999,7 @@ def logout():
 
 
 if __name__ == '__main__':
-    #app.secret_key = generate_session_id()
+    app.secret_key = 'super secret key'
     app.run(debug=True)
     #app.run()
 
