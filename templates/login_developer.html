@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script>
+        function Valid()
+{
+
+    var Developer = document.forms["login"]["developer"];
+
+    var Password = document.forms["login"]["password"];
+
+    if (Developer.value == "")
+    {
+        window.alert("Please enter your Developer id");
+        Developer.focus();
+        return false;
+    }
+
+    if (Password.value == "")
+    {
+        window.alert("Please enter your password");
+        Password.focus();
+        return false;
+    }
+
+    return true;
+}</script>
+        <!-- Favicons -->
+        <link href="{{ url_for('static', filename='img/logo_.jpg') }}" rel="icon">
+        <link href="{{ url_for('static', filename='img/logo_.jpg') }}" rel="apple-touch-icon">
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login|Developer</title>
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='fonts/material-design-iconic-font/css/material-design-iconic-font.min.css') }}">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style_login.css') }}">
+	</head>
+<body>
+	<div class="main">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form method="POST" id="signup-form" class="signup-form" name="login" onsubmit="return Valid()" action="/verify_developer">
+                        <label class="loginhere">
+                            <a href="/" class="loginhere-link"><font color=#1dc8cd><-Home</font></a>
+                        </label>
+                        <p class="form-title"><font color=#FF3B28>{{ msg }}</font></p>
+                        <h2 class="form-title"><font color=#1dc8cd>Log in to Developer Mode</font></h2>
+                        <div class="form-group">
+                            <label class="loginhere">Developer Id</label>
+                            <input type="text" class="form-input" name="developer" id="developerid"
+                                   pattern="D[0-9].{0,}"
+                                   title="Should be in a format -> DXXX"
+                                   placeholder="Your Developer id"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="loginhere">Password</label>
+                            <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit"  value="Login" style="background-color: #1dc8cd; color: white; cursor:pointer;"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Forget your password ? <a href="#" class="loginhere-link"><font color=#1dc8cd>Click here</font></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

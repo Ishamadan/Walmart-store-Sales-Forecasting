@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sales forecasting</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/logo_.jpg') }}" rel="icon">
+  <link href="{{ url_for('static', filename='img/logo_.jpg') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='lib/magnific-popup/magnific-popup.css') }}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{{ url_for('static', filename='css/style__.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left" >
+        <h1><a href="#intro" class="scrollto">Demand Forecasting</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li class="menu-has-children"><a href="">Login</a>
+            <ul>
+              <li><a href="/login_company">Company</a></li>
+              <li><a href="/login_store">Store Head</a></li>
+            </ul>
+          </li>
+          <!--<li><a href="/login_developer">Developers</a></li> -->
+          <!--<li><a href="#contact">Contact Us</a></li> -->
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+  <!--==========================
+    Intro Section
+  ============================-->
+  <!--<section id="intro">
+
+    <div class="intro-text">
+      <h2><br><br><br>Deliver accurate forecasts in a fraction of the time</h2>
+      <p>Shows a clear picture of predictable future performance.<br>
+It handles the complexities so you can make decisions with confidence.</p>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+
+    </div>
+
+    <div class="product-screens">
+
+      <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
+        <img src="{{ url_for('static', filename='') }}" alt="">
+      </div>
+
+      <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+        <img src="{{ url_for('static', filename='') }}" alt="">
+      </div>
+
+      <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+        <img src="{{ url_for('static', filename='') }}" alt="">
+      </div>
+
+    </div>
+
+  </section><!-- #intro -->
+  <section id="intro">
+
+    <div class="intro-text">
+      <h2><br><br>Deliver accurate forecasts in a fraction of the time</h2>
+      <p>Shows a clear picture of predictable future performance.<br>
+It handles the complexities so you can make decisions with confidence.</p>
+      <a href="/sign" class="btn-get-started scrollto">Get Started</a>
+    </div>
+    <!--
+    <div class="product-screens">
+
+      <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
+        <img src="img/product-screen-1.png" alt="">
+      </div>
+
+      <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+        <img src="img/product-screen-2.png" alt="">
+      </div>
+
+      <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+        <img src="img/product-screen-3.png" alt="">
+      </div>
+
+    </div>  -->
+
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Forecasting doesn’t need to be daunting</h3>
+          <span class="section-divider"></span>
+          <p align="center">
+          When you need precision in your forecast,forecasting in spreadsheets <br>
+            leaves dangerous room for error.Worse, dirty data damages the integrity<br>
+            of your forecast, all the way from the rep level to the top.<br>
+              We provide combination of outstanding computational power,<br>
+            intelligent algorithms and machine learning allows for optimized<br>
+            sales forecasting that automatically factors in the impact of all<br>
+            known external events, such as holidays, seasons, trends <br>
+            as well as adapt planned changes in your promotional activities.<br>
+          Finally – a way to eliminate the guesswork and bring sales intelligence <br>into
+            your forecasting process.
+          </p>
+        </div>
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Product Featuress Section
+    ============================-->
+    <section id="features">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="container-fluid">
+            <div class="section-header wow fadeIn" data-wow-duration="1s">
+              <h3 class="section-title">Features</h3>
+              <span class="section-divider"></span>
+            </div>
+          </div>
+
+
+          <div class="col-lg-8 col-md-7 " align="center">
+
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6 box wow fadeInRight">
+                <div class="icon"><i class="ion-arrow-graph-up-right"></i></div>
+                <h4 class="title">Growth Chart</h4>
+                <p>Keep tracking the performance of each store</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                <h4 class="title">View strength of your model</h4>
+                <p>enables you to compare your forecast data to actual sale graphically</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+                <div class="icon"><i class="icon ion-podium"></i></div>
+                <h4 class="title">Highly interactive forecasting</h4>
+                <p>compiled for you in beautiful visuals so that you can jump straight into analysis.</p>
+              </div>
+              <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
+                <div class="icon"><i class="ion-ios-color-filter-outline"></i></div>
+                <h4 class="title">Customize to suit your needs</h4>
+                <p>enables you to fully customize the Forecasting view, and filter for products</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- #features -->
+
+    <!--==========================
+      Product Advanced Featuress Section
+    ============================-->
+    <section id="advanced-features">
+
+      <div class="features-row section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-right wow fadeInRight" height="200" width="400" src="{{ url_for('static', filename='img/Data-driven-decisions.png') }}" alt="">
+              <div class="wow fadeInLeft">
+                <h2>High Quality</h2>
+                <p>You have to be confident when forecasting your sales, that’s why a Machine Learning tool has to guarantee high quality. Few months of sales or long time series, it doesn’t matter. It puts quality everywhere because better quality means better decisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-left wow fadeInLeft" height="200" width="300" src="{{ url_for('static', filename='img/toptal-blog-image2.png') }}" alt="">
+              <div class="wow fadeInRight">
+                <h2>Dozens of saved hours</h2>
+                <p>Is not only a matter of quality or doing boring things: when the high quality meets automation, then better decisions can be made in a shorter time.<br>
+                The remaining is all yours, and you can invest this saved time in other core activities.<br>And if you want to simulate new scenarios, you can use our collaborative forecasting and review our predictions. <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-row section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <img class="advanced-feature-img-right wow fadeInRight" height="200" width="300" src="{{ url_for('static', filename='img/image5.png') }}" alt="">
+              <div class="wow fadeInLeft">
+                <h2>Predictive Analytics</h2>
+                <p>Build multivariate linear regression models with seasonal, Fourier, and<br>
+                  trend components. Take advantages of fast multivariate tools with superior <br>
+                  optimization of core algorithms and excellent parallel processing capabilities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Contact Us</h3>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>MITGI, Ram Ganga Vihar phase II<br>Moradabad, 244001</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>info@example.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+91 5589 55488</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Demand Forecasting</strong>. All Rights Reserved
+          </div>
+
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/superfish/hoverIntent.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/superfish/superfish.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/magnific-popup/magnific-popup.min.js') }}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{{ url_for('static', filename='contactform/contactform.js') }}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
